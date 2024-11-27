@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>achat</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 id="haut">LEGO WebStore</h1>
+        <hr/>
+    </header>
+    <nav>
+        <ul>
+            <li><a class="lien" href="produit.html">Produit</a></li>
+            <li><a class="lien" href="acheter.html">Acheter</a></li>
+            <li><a class="lien" href="contact.html">Contact</a></li>
+        </ul>
+        <hr/>
+    </nav>
+    <div>
+        <h3 class="a">Acheter des LEGO</h3>
+        <p>Remplissez le formulaire ci-dessous pour commander des <a href="#">LEGO</a>!</p>
+    
+        <h3>Informations personnelles</h3>
+        <form>
+            <label for="civilite">Civilité :</label><br/>
+            <input type="radio" id="civilite" name="genre" value="M"/> M 
+            <input type="radio" id="civilite_mme" name="genre" value="Mme"/> Mme <br/>
+
+            <label for="nom">Nom :</label><br/>
+            <input id="nom" name="nom" type="text"/><br/>
+
+            <label for="prenom">Prénom :</label><br/>
+            <input id="prenom" name="prenom" type="text"/><br/>
+
+            <label for="email">Mail :</label><br/>
+            <input id="email" type="email" name="email"/><br/>
+
+            <h3>Informations de livraison</h3>
+            <label for="quantite">Quantité à commander :</label><br/>
+            <select id="quantite" name="quantite">
+                <option value="1 boitie">1 boîtie</option>
+                <option value="2 boitie">2 boîties</option> 
+            </select><br/>
+
+            <label for="adresse">Adresse de livraison :</label><br/>
+            <textarea id="adresse" name="adresse" cols="20" rows="5"></textarea><br/>
+
+            <h3>Confirmation</h3>
+            <input type="checkbox" name="confirmation" id="confirmation"/> 
+            <label for="confirmation">J'ai relu ma commande et certifie que ces informations sont correctes.</label><br/>
+
+            <input type="submit" value="Confirmer la commande"/>
+        </form>
+    </div>
+    <hr/>
+    <footer>
+        <a href="#haut" class="b"><strong>Retour en haut de page</strong></a><br/>
+        Autre : Flortan Lepretre<br/>
+        ULCO / Développement Web / 2017-2018<br/>
+        Copyright(c) 2017 Copyright Holder. All rights reserved.
+    </footer>
+</body>
+</html>
